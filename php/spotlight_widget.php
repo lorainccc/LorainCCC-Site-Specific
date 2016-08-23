@@ -41,7 +41,7 @@ class LCCC_spotlight_Widget extends WP_Widget{
             <div class="service-box-header">
              <?php 	$sub_title = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_sub_header');
 													?>
-													<h2><?php echo $sub_title; ?><span><?php the_title();?></span></h2>
+													<h2>Services for<?php echo $sub_title; ?><span><?php the_title();?></span></h2>
             </div>
             <div class="service-box-body">
               <p><?php the_content();?></p>
