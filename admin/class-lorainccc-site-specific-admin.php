@@ -73,7 +73,8 @@ class Lorainccc_Site_Specific_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/lorainccc-site-specific-admin.css', array(), $this->version, 'all' );
+		//Commenting out since the files are empty.
+  //wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/lorainccc-site-specific-admin.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,7 +97,8 @@ class Lorainccc_Site_Specific_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/lorainccc-site-specific-admin.js', array( 'jquery' ), $this->version, false );
+		//Commenting out since the files are empty.
+  //wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/lorainccc-site-specific-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 
