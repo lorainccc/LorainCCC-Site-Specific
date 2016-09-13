@@ -40,7 +40,7 @@ class LCCC_highlight_Widget extends WP_Widget{
 							<a href="<?php echo $asoc_link; ?>" class="box-link">
 								<?php
 											if ( has_post_thumbnail() ) {
-															the_post_thumbnail();
+															the_post_thumbnail( 'highlight_thumbnail' );
 												}
 											else {
    								?>
