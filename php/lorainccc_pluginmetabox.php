@@ -207,17 +207,17 @@ jQuery('#event_end_time').timepicker({
 <h4>Background Color</h4>
 <p>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_0" value="#6DB400" <?php echo ( badge_metabox_get_meta( 'badge_metabox_color_scheme_select' ) === 'Green' ) ? 'checked' : ''; ?>>
-<label for="badge_metabox_color_scheme_select_0">Green</label><br>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_0" value="#6DB400" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#6DB400' ) ? 'checked' : ''; ?>>
+<label for="lorainccc_lccc_highlight_box_bg_color_0">Green</label><br>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_1" value="#67296E" <?php echo ( badge_metabox_get_meta( 'badge_metabox_color_scheme_select' ) === 'Purple' ) ? 'checked' : ''; ?>>
-<label for="badge_metabox_color_scheme_select_1">Purple</label><br>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_1" value="#67296E" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#67296E' ) ? 'checked' : ''; ?>>
+<label for="lorainccc_lccc_highlight_box_bg_color_1">Purple</label><br>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_2" value="#068795" <?php echo ( badge_metabox_get_meta( 'badge_metabox_color_scheme_select' ) === 'Teal' ) ? 'checked' : ''; ?>>
-<label for="badge_metabox_color_scheme_select_2">Teal</label><br>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_2" value="#068795" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#068795' ) ? 'checked' : ''; ?>>
+<label for="lorainccc_lccc_highlight_box_bg_color_2">Teal</label><br>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_3" value="#E36000" <?php echo ( badge_metabox_get_meta( 'badge_metabox_color_scheme_select' ) === 'Orange' ) ? 'checked' : ''; ?>>
-<label for="badge_metabox_color_scheme_select_3">Orange</label><br>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_3" value="#E36000" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#E36000' ) ? 'checked' : ''; ?>>
+<label for="lorainccc_lccc_highlight_box_bg_color_3">Orange</label><br>
 
 	</p>
 
