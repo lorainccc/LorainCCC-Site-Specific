@@ -122,7 +122,12 @@ jQuery('#event_end_time').timepicker({
 });
 </script>
 
-<h4>Associated Link:</h4>
+<p>
+ 		<label for="lorainccc_spotlight_box_sub_header"><?php _e( 'Sub Title', 'lorainccc_spotlight_box_sub_header' ); ?></label><br>
+		<input class="widefat" type="text" name="lorainccc_spotlight_box_sub_header" id="lorainccc_spotlight_box_sub_header" value="<?php echo lorainccc_spotlight_box_get_meta( 'lorainccc_spotlight_box_sub_header' ); ?>">
+
+</p>
+
 	<p>
 		<label for="lorainccc_spotlight_box_link"><?php _e( 'Associated Link', 'lorainccc_spotlight_box' ); ?></label><br>
 		<input class="widefat" type="text" name="lorainccc_spotlight_box_link" id="lorainccc_spotlight_box_link" value="<?php echo lorainccc_spotlight_box_get_meta( 'lorainccc_spotlight_box_link' ); ?>">
@@ -140,6 +145,9 @@ function lorainccc_spotlight_box_save( $post_id ) {
 	if ( isset( $_POST['lorainccc_spotlight_box_link'] ) )
 		update_post_meta( $post_id, 'lorainccc_spotlight_box_link', esc_attr( $_POST['lorainccc_spotlight_box_link'] ) );
 
+	if ( isset( $_POST['lorainccc_spotlight_box_sub_header'] ) )
+		update_post_meta( $post_id, 'lorainccc_spotlight_box_sub_header', esc_attr( $_POST['lorainccc_spotlight_box_sub_header'] ) ); 
+ 
 }
 add_action( 'save_post', 'lorainccc_spotlight_box_save' );
 
