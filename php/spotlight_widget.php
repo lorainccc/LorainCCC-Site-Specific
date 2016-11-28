@@ -34,7 +34,7 @@ class LCCC_spotlight_Widget extends WP_Widget{
 				?>
 				<div class="column lccc-spotlight">
 				<div data-equalizer="<?php the_title();?>" data-equalize-on="medium" data-resize="<?php the_title();?>">
-        <div class="large-7 medium-4 columns service-box-image" data-equalizer-watch="business"> <?php the_post_thumbnail( 'spotlight_thumbnail' ); ?>
+        <div class="large-7 medium-4 columns service-box-image" data-equalizer-watch="business"> <?php the_post_thumbnail(); ?>
 								</div>
         <div class="large-5 medium-8 columns service-box-copy text-center" data-equalizer-watch="business">
           <div class="service-box-container">
