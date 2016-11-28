@@ -61,6 +61,7 @@ class LCCC_spotlight_Widget extends WP_Widget{
 	<?php
 			}
 		?>
+	
 </div><!--Closes the Spotlight grid div-->
 <?php
 	}
