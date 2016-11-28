@@ -52,10 +52,10 @@ class LCCC_spotlight_Widget extends WP_Widget{
 					}
 											?>
             <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
-       	<div class="yellow-bottom-border hide-medium"></div>		
+       	<div class="yellow-bottom-border show-for-small-only"></div>		
 					</div><!--	 Closes the Spotlight content div -->
 					
-							<div class="yellow-bottom-border hide-small"></div>
+							<div class="yellow-bottom-border hide-for-small-only"></div>
       </div><!--	 Closes the Spotlight div-->
 				</div><!--	 Closes the Spotlight container div-->
 	<?php
