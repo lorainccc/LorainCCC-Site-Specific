@@ -213,10 +213,10 @@ jQuery('#event_end_time').timepicker({
 		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_1" value="#67296E" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#67296E' ) ? 'checked' : ''; ?>>
 <label for="lorainccc_lccc_highlight_box_bg_color_1">Purple</label><br>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_2" value="#068795" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#068795' ) ? 'checked' : ''; ?>>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_2" value="#008290" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#008290' ) ? 'checked' : ''; ?>>
 <label for="lorainccc_lccc_highlight_box_bg_color_2">Teal</label><br>
 
-		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_3" value="#C75300" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#C75300' ) ? 'checked' : ''; ?>>
+		<input type="radio" name="lorainccc_lccc_highlight_box_bg_color" id="lorainccc_lccc_highlight_box_bg_color_3" value="#C75200" <?php echo ( lorainccc_high_light_box_get_meta( 'lorainccc_lccc_highlight_box_bg_color' ) === '#C75200' ) ? 'checked' : ''; ?>>
 <label for="lorainccc_lccc_highlight_box_bg_color_3">Orange</label><br>
 
 	</p>
