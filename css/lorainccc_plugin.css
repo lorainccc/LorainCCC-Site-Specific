@@ -20,3 +20,98 @@ section.cta-icons div.row .column{
     background-color: #0a3266;
     color: #fff;
 }
+@media only screen and (min-width: 1022px) and (max-width: 1039px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.5rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 266px;
+	}
+}
+@media only screen and (min-width: 1022px) and (max-width: 1030px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.5rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 277px;
+	}
+}
+@media only screen and (min-width: 1031px) and (max-width: 1040px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.5rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 279px;
+	}
+}
+@media only screen and (min-width: 1041px) and (max-width: 1070px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.5rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 280px;
+	}
+}
+@media only screen and (min-width: 1071px) and (max-width: 1102px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.5rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 290px;
+	}
+}
+@media only screen and (min-width: 1103px) and (max-width: 1112px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.6rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 302px;
+	}
+}
+@media only screen and (min-width: 1113px) and (max-width: 1139px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.6rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 308px;
+	}
+}
+@media only screen and (min-width: 1140px) and (max-width: 1179px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.6rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 315px;
+	}
+}
+@media only screen and (min-width: 1180px) and (max-width: 1203px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 0.6rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 321px;
+	}
+}
+@media only screen and (min-width: 1204px) and (max-width: 1223px) {
+		div.service-box-body{
+    font-size: .75rem;
+    padding: 1.2rem 1rem;
+		}
+	div.service-box-container{
+			min-height: 331px;
+	}
+}
+@media only screen and (min-width: 1223px) {
+	div.service-box-container{
+			min-height: 332px;
+	}
+}

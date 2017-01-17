@@ -33,7 +33,62 @@ class LCCC_spotlight_Widget extends WP_Widget{
 					$query->the_post();
 				?>
 				<div class="column lccc-spotlight">
-				<div data-equalizer="<?php the_title();?>" data-equalize-on="medium" data-resize="<?php the_title();?>">
+						<div class="show-for-large">
+								<div data-equalizer="<?php the_title();?>" data-equalize-on="large" data-resize="<?php the_title();?>">
+        <div class="large-7 medium-12 small-12 columns service-box-image"> <?php the_post_thumbnail(); ?>
+								</div>
+        <div class="large-5 medium-12 small-12 columns service-box-copy text-center">
+          <div class="service-box-container">
+            <div class="service-box-header">
+             <?php 	$sub_title = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_sub_header');
+													?>
+													<h2><?php echo $sub_title; ?><span><?php the_title();?></span></h2>
+            </div>
+            <div class="service-box-body">
+              <p><?php the_content();?></p>
+            </div>
+												<?php 	$asoc_link = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_link');
+														if($asoc_link == ''){
+						$asoc_link = 'http://www.lorainccc.edu/';
+					}
+											?>
+            <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+       	<div class="yellow-bottom-border show-for-small-only"></div>		
+					</div><!--	 Closes the Spotlight content div -->
+					
+							<div class="yellow-bottom-border hide-for-small-only"></div>
+      </div>
+								<!--	 Closes the Spotlight div-->
+					</div>
+						<div class="show-for-medium-only">
+								<div data-equalizer="<?php the_title();?>">
+        <div class="large-7 medium-12 small-12 columns service-box-image"> <?php the_post_thumbnail(); ?>
+								</div>
+        <div class="large-5 medium-12 small-12 columns service-box-copy text-center">
+          <div class="service-box-container">
+            <div class="service-box-header">
+             <?php 	$sub_title = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_sub_header');
+													?>
+													<h2><?php echo $sub_title; ?><span><?php the_title();?></span></h2>
+            </div>
+            <div class="service-box-body">
+              <p><?php the_content();?></p>
+            </div>
+												<?php 	$asoc_link = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_link');
+														if($asoc_link == ''){
+						$asoc_link = 'http://www.lorainccc.edu/';
+					}
+											?>
+            <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+       	<div class="yellow-bottom-border show-for-small-only"></div>		
+					</div><!--	 Closes the Spotlight content div -->
+					
+							<div class="yellow-bottom-border hide-for-small-only"></div>
+      </div>
+								<!--	 Closes the Spotlight div-->
+					</div>
+						<div class="show-for-small-only">
+								<div data-equalizer="<?php the_title();?>" data-equalize-on="large" data-resize="<?php the_title();?>">
         <div class="large-7 medium-12 small-12 columns service-box-image" data-equalizer-watch="business"> <?php the_post_thumbnail(); ?>
 								</div>
         <div class="large-5 medium-12 small-12 columns service-box-copy text-center" data-equalizer-watch="business">
@@ -56,8 +111,10 @@ class LCCC_spotlight_Widget extends WP_Widget{
 					</div><!--	 Closes the Spotlight content div -->
 					
 							<div class="yellow-bottom-border hide-for-small-only"></div>
-      </div><!--	 Closes the Spotlight div-->
-				</div><!--	 Closes the Spotlight container div-->
+      </div>
+								<!--	 Closes the Spotlight div-->
+					</div>
+					</div><!--	 Closes the Spotlight container div-->
 	<?php
 			}
 		?>
