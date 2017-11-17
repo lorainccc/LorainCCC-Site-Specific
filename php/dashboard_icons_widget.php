@@ -37,7 +37,7 @@ class LCCC_Dashboard_Icons_Widget extends WP_Widget{
 						$asoc_link = 'http://www.lorainccc.edu/';
 					}
 					?>
-					<a href="<?php echo $asoc_link; ?>" class="yellow-icon float-center"><?php the_post_thumbnail('thumbnail'); ?> </a>
+					<a href="<?php echo $asoc_link; ?>" class="yellow-icon float-center" title="<?php  the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?> </a>
 					<div class="icon-label"><a href="<?php echo $asoc_link; ?>"><?php  the_title(); ?></a>	</div>
 				</div>
 	<?php
