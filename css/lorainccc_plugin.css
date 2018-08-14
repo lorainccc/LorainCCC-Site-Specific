@@ -1,13 +1,13 @@
-div.column a.yellow-icon img{
+div.cell a.yellow-icon img{
 	width: 70%;
 }
-div.column .icon-label{text-align: center;
+div.cell .icon-label{text-align: center;
     margin-top: 15px;font-weight: 500;
 /*    color: #fefefe;*/
     font-size: 1.125rem;
     margin-top: 1rem;}
 .dash-icons-grid{margin: 0 15px;}
-section.cta-icons div.row .column{
+section.cta-icons div.grid-x.grid-margin-x .cell{
 	padding: 15px 0;
 }
 .icon-label a{color: #fff;}

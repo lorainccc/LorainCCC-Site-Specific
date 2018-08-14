@@ -4,13 +4,13 @@ class LCCC_spotlight_Widget extends WP_Widget{
 	 * Sets up the widgets name etc
 	 */
 	public function __construct() {
-		$widget_ops = array( 
+		$widget_ops = array(
 				'classname' => 'LCCC_spotlight_Widget',
 			'description' => 'LCCC Spotlight Widget fpr displaying LCCC Spotligh Sections on LCCC sites',
 		);
 		parent::__construct( 'LCCC_spotlight_Widget', 'LCCC Spotlight Widget', $widget_ops );
 	}
-	
+
 	/**
 	 * Outputs the content of the widget
 	 *
@@ -23,8 +23,8 @@ class LCCC_spotlight_Widget extends WP_Widget{
 		$dbi_args = array(
 			'post_type' => 'spotlights',
 			'order' => 'ASC',
-			'posts_per_page' => 2, 
-		);	
+			'posts_per_page' => 2,
+		);
 		$query = new WP_Query( $dbi_args );
 		?>
 <div class="small-up-1 medium-up-2 large-up-2 spotlight-grid">
@@ -32,11 +32,12 @@ class LCCC_spotlight_Widget extends WP_Widget{
 			while ( $query->have_posts() ) {
 					$query->the_post();
 				?>
-				<div class="column lccc-spotlight">
+			<div class="grid-container">
+				<div class="cell lccc-spotlight">
 				<div data-equalizer="<?php the_title();?>" data-equalize-on="medium" data-resize="<?php the_title();?>">
-        <div class="large-7 medium-4 columns service-box-image" data-equalizer-watch="business"> <?php the_post_thumbnail( 'spotlight_thumbnail' ); ?>
+        <div class="large-7 medium-4 cell service-box-image" data-equalizer-watch="business"> <?php the_post_thumbnail( 'spotlight_thumbnail' ); ?>
 								</div>
-        <div class="large-5 medium-8 columns service-box-copy text-center" data-equalizer-watch="business">
+        <div class="large-5 medium-8 cell service-box-copy text-center" data-equalizer-watch="business">
           <div class="service-box-container">
             <div class="service-box-header">
              <?php 	$sub_title = lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_sub_header');
@@ -56,6 +57,7 @@ class LCCC_spotlight_Widget extends WP_Widget{
 					<div class="yellow-bottom-border"></div>
       </div>
 				</div>
+			</div>
 	<?php
 			}
 		?>
@@ -68,9 +70,9 @@ class LCCC_spotlight_Widget extends WP_Widget{
 	 * @param array $instance The widget options
 	 */
 	public function form( $instance ) {
-		
+
 	}
-	
+
 	/**
 	 * Processing widget options on save
 	 *
@@ -78,9 +80,9 @@ class LCCC_spotlight_Widget extends WP_Widget{
 	 * @param array $old_instance The previous options
 	 */
 	public function update( $new_instance, $old_instance ) {
-		
+
 	}
-	
+
 }
 add_action( 'widgets_init', function(){
 	register_widget( 'LCCC_spotlight_Widget' );
