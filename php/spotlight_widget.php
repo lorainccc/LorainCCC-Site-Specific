@@ -51,8 +51,16 @@ class LCCC_spotlight_Widget extends WP_Widget{
 														if($asoc_link == ''){
 						$asoc_link = 'http://www.lorainccc.edu/';
 					}
-											?>
-            <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+			if(lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore') !=''){
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button"><?php echo lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore');  ?></a> </div>
+			<?php
+			}else{
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+			<?php
+			}
+?>
        	<div class="yellow-bottom-border show-for-small-only"></div>		
 					</div><!--	 Closes the Spotlight content div -->
 					
@@ -78,8 +86,16 @@ class LCCC_spotlight_Widget extends WP_Widget{
 														if($asoc_link == ''){
 						$asoc_link = 'http://www.lorainccc.edu/';
 					}
-											?>
-            <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+		if(lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore') !=''){
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button"><?php echo lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore');  ?></a> </div>
+			<?php
+			}else{
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+			<?php
+			}
+			?>
        	<div class="yellow-bottom-border show-for-small-only"></div>		
 					</div><!--	 Closes the Spotlight content div -->
 					
@@ -105,8 +121,16 @@ class LCCC_spotlight_Widget extends WP_Widget{
 														if($asoc_link == ''){
 						$asoc_link = 'http://www.lorainccc.edu/';
 					}
-											?>
-            <a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+			if(lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore') !=''){
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button"><?php echo lorainccc_spotlight_box_get_meta('lorainccc_spotlight_box_learnmore');  ?></a> </div>
+			<?php
+			}else{
+			?>
+			<a href="<?php echo $asoc_link; ?>" class="button">Learn More</a> </div>
+			<?php
+			}
+			?>
        	<div class="yellow-bottom-border show-for-small-only"></div>		
 					</div><!--	 Closes the Spotlight content div -->
 					

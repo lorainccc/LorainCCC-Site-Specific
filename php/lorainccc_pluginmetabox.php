@@ -134,6 +134,14 @@ jQuery('#event_end_time').timepicker({
 
 	</p>
 
+	
+	<p>
+		<label for="lorainccc_spotlight_box_link"><?php _e( 'Learn More Text', 'lorainccc_spotlight_box' ); ?></label><br>
+		<input class="widefat" type="text" name="lorainccc_spotlight_box_learnmore" id="lorainccc_spotlight_box_learnmore" value="<?php echo lorainccc_spotlight_box_get_meta( 'lorainccc_spotlight_box_learnmore' ); ?>">
+
+	</p>
+
+
 <?php
 }
 
@@ -148,6 +156,9 @@ function lorainccc_spotlight_box_save( $post_id ) {
 	if ( isset( $_POST['lorainccc_spotlight_box_sub_header'] ) )
 		update_post_meta( $post_id, 'lorainccc_spotlight_box_sub_header', esc_attr( $_POST['lorainccc_spotlight_box_sub_header'] ) ); 
  
+	if ( isset( $_POST['lorainccc_spotlight_box_learnmore'] ) )
+	update_post_meta( $post_id, 'lorainccc_spotlight_box_learnmore', esc_attr( $_POST['lorainccc_spotlight_box_learnmore'] ) ); 
+
 }
 add_action( 'save_post', 'lorainccc_spotlight_box_save' );
 
